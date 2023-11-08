@@ -1,45 +1,47 @@
 #include "my_iostream.h"
 
-void std::ostream::print(char* str)
+My_std::ostream::ostream() : len(0){}
+
+void My_std::ostream::print(const char* str)
 {
-	len += printf("%s ", str);
+	len += printf("%s", str);
 }
 
-void std::ostream::print(int i)
+void My_std::ostream::print(int i)
 {
-	len += printf("%d ", i);
+	len += printf("%d", i);
 }
 
-void std::ostream::print(double d)
+void My_std::ostream::print(double d)
 {
-	len += printf("%lf ", d);
+	len += printf("%f", d);
 }
 
-std::ostream& std::ostream::operator<<(char* str)
+My_std::ostream& My_std::ostream::operator<<(const char* str)
 {
 	print(str);
 	return *this;
 }
 
-std::ostream& std::ostream::operator<<(int i)
+My_std::ostream& My_std::ostream::operator<<(int i)
 {
 	print(i);
 	return *this;
 }
 
-std::ostream& std::ostream::operator<<(double d)
+My_std::ostream& My_std::ostream::operator<<(double d)
 {
 	print(d);
 	return *this;
 }
 
-std::ostream& std::ostream::operator<<(ostream& (*f)(ostream&))
+My_std::ostream& My_std::ostream::operator<<(ostream& (*f)(ostream&))
 {
 	return f(*this);
 }
 
 
-std::ostream std::endl(ostream& p)
+My_std::ostream My_std::endl(ostream& p)
 {
 	printf("\n");
 	return p;

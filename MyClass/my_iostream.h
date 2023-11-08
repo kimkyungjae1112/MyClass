@@ -2,7 +2,7 @@
 #define MY_IOSTREAM_H
 #include <stdio.h>
 
-namespace std
+namespace My_std
 {
 	class ostream
 	{
@@ -10,11 +10,13 @@ namespace std
 		int len;
 
 	public:
-		void print(char* str);
+		ostream();
+
+		void print(const char* str);
 		void print(int i);
 		void print(double d);
 
-		ostream& operator<< (char* str);
+		ostream& operator<< (const char* str);
 		ostream& operator<< (int i);
 		ostream& operator<< (double d);
 		ostream& operator<< (ostream&(*f)(ostream&));
@@ -22,6 +24,6 @@ namespace std
 
 	ostream endl(ostream& p);
 
-	ostream cout;
+	extern ostream cout;
 }
 #endif

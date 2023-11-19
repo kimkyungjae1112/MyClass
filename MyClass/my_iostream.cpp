@@ -47,7 +47,3 @@ My_std::ostream My_std::endl(ostream& p)
 	return p;
 }
 
-int main()
-{
-	My_std::cout << "Hi" << 123 << My_std::endl;
-}

@@ -24,6 +24,6 @@ namespace My_std
 
 	ostream endl(ostream& p);
 
-	extern ostream cout;
+	ostream cout;
 }
 #endif

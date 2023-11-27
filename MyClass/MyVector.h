@@ -1,5 +1,5 @@
 #pragma once
-//#include <iostream>
+//#include <iostream> // 내가 알고 있던 방법으로 만든건데 별로인듯;
 //
 //template<typename T>
 //class MyVector
@@ -84,7 +84,6 @@
 //	}
 //
 //};
-
 
 #include <iostream>
 
@@ -197,6 +196,10 @@ public:
 		content[mIndex++] = data;
 	}
 
+	void _sort()
+	{
+		Sort(begin(), end(), [](T a, T b) { return a > b; });
+	}
 	typedef VECTOR_Iterator<T> iterator;
 	iterator begin() { return iterator(content); }
 	iterator end() { return iterator(content + mSize); }

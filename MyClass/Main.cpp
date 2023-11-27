@@ -14,7 +14,8 @@ int main()
 	{
 		cout << *iter << " ";
 	}
-	Sort(vec.begin(), vec.end());
+	vec._sort();
+	//Sort(vec.begin(), vec.end());
 	cout << endl;
 
 	for (auto& i : vec)

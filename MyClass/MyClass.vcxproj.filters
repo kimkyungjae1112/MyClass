@@ -32,5 +32,20 @@
     <ClInclude Include="String.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="MyVector.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\header.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\istream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\ostream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\iostream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

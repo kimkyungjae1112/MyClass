@@ -133,6 +133,11 @@
     <ClCompile Include="String.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\header.h" />
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\iostream.h" />
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\istream.h" />
+    <ClInclude Include="..\..\..\..\Documents\카카오톡 받은 파일\ostream.h" />
+    <ClInclude Include="MyVector.h" />
     <ClInclude Include="String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
